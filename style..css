@@ -15,7 +15,7 @@
   color: #000000;
 }
 .font-clr-2 {
-  color: #e95a08;
+  color: #E95a08;
 }
 .font-clr-3 {
   color: rgba(0, 0, 0, 0.5);
@@ -24,7 +24,7 @@
   color: #111111;
 }
 .font-clr-5 {
-  color: 6B7280;
+  color: #6B7280;
 }
 .font-clr-6 {
   color: #ffffff;
@@ -36,6 +36,14 @@
 
 .t-size {
   font-size: 22px;
+}
+.btn{
+  width: 100%;
+  display: block;
+  color: #FFFFFF;
+  background-color: #e95a08;
+  padding: 10px 16px;
+  border: none;
 }
 
 /* nav-styles */
@@ -78,10 +86,62 @@ ul {
   max-width: 570px;
   height: 350px;
 }
-.banner h5 {
+.banner h1 {
   font-size: 65px;
   margin-bottom: 20px;
 }
+.banner-text p{
+  font-weight: 400;
+}
+
+/* Plants section styles */
+.Plants{
+  text-align: center;
+  padding: 20px 50px;
+  /* margin: 120px 150px 220px 150px; */
+
+}
+.plants-header{
+  margin-top: 16px;
+  margin-bottom: 50px;
+}
+.plants-header h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.plants-header p{
+  font-size: 22px;
+  font-weight: 400;
+}
+.plant-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plant-card {
+  gap: 30px;
+  width: 100%;
+}
+.plant-card img{
+  width: 100%;
+  height: auto;
+}
+.plant-card h3{
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.plant-card p{
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+
 
 /* Mobile responsive */
 @media screen and (max-width: 576px) {
@@ -105,16 +165,38 @@ ul {
     margin: 0px 16px 0px 16px;
   }
 
-  .banner-text h5,
+  .banner-text h1,
   .banner-text p {
     text-align: left;
   }
 
-  .banner h5 {
+  .banner h1 {
     font-size: 22px;
   }
 
-  .t-size {
+  .t-size,
+  .plants-header p{
     font-size: 14px;
   }
+  /* Plants responsive */
+  .plant-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Plants{
+    padding: 0 13px;
+  }
+  .plants-header{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .plants-header h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .plant-card h3,
+  .plant-card p{
+    font-size: 16px;
+  }
+
 }
+
