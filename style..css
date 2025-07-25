@@ -184,6 +184,130 @@ ul {
   margin-bottom: 15px;
 }
 
+/* Latest Deal Section style */
+.latest-deal-section {
+  margin: 135px auto 120px auto;
+  padding: 20px 50px;
+  text-align: center;
+}
+.latest-deals-header h2 {
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+.latest-deals-header p {
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.deals-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.deal-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 20px;
+}
+
+.deal-right {
+  align-items: center;
+  width: 58%;
+}
+
+.deal-card.small {
+  width: 100%;
+  height: 160px;
+  /* background-size: cover;
+  background-position: center; */
+}
+
+.deal-card.large {
+  width: 100%;
+  height: 328px;
+  /* background-size: cover;
+  background-position: center; */
+}
+
+.deal-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.deal-info h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.deal-info h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.deal-info ul li a {
+  list-style: none;
+  color: white;
+}
+
+/* join section style */
+.join-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.join-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.join-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.join-form,
+.join-button {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-80%, -70%);
+  text-align: center;
+}
+.join-content h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.join-form {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+}
+.join-form input[type="email"] {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  font-size: 16px;
+}
+.join-form button {
+  background-color: #e95a08;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
 /* Mobile responsive */
 
 @media screen and (max-width: 576px) {
@@ -273,5 +397,86 @@ ul {
   }
   .plant-lover-text li {
     font-size: 14px;
+  }
+
+  /* latest deal responive */
+  .deals-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .deal-left,
+  .deal-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .deal-card.small,
+  .deal-card.large {
+    /* width: auto; */
+    height: auto;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .deal-info h3 {
+    font-size: 22px;
+  }
+
+  .deal-info h4 {
+    font-size: 18px;
+  }
+
+  .deal-info ul li {
+    font-size: 14px;
+  }
+
+  /* join secton style  */
+  .join-section {
+    height: 400px;
+    position: relative;
+  }
+
+  .join-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .join-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .join-content h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .join-form {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-left: 20px;
+  }
+
+  .join-form input[type="email"] {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .join-form button {
+    padding: 10px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
   }
 }
