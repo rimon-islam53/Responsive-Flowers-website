@@ -15,7 +15,7 @@
   color: #000000;
 }
 .font-clr-2 {
-  color: #E95a08;
+  color: #e95a08;
 }
 .font-clr-3 {
   color: rgba(0, 0, 0, 0.5);
@@ -24,7 +24,7 @@
   color: #111111;
 }
 .font-clr-5 {
-  color: #6B7280;
+  color: #6b7280;
 }
 .font-clr-6 {
   color: #ffffff;
@@ -37,10 +37,10 @@
 .t-size {
   font-size: 22px;
 }
-.btn{
+.btn {
   width: 100%;
   display: block;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #e95a08;
   padding: 10px 16px;
   border: none;
@@ -60,15 +60,16 @@ ul {
   gap: 30px;
   /* justify-content: space-between; */
 }
-.home{
-    color: #252432;
-    font-weight: bold;
+.home {
+  color: #252432;
+  font-weight: bold;
 }
 
-.shop, .about{
-    color: #8987A1;
-    font-weight: 400;
-    font-size: 14px;
+.shop,
+.about {
+  color: #8987a1;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* Banner-styles */
@@ -83,37 +84,36 @@ ul {
   margin-bottom: 120px;
 }
 .banner img {
-  max-width: 570px;
+  max-width: 576px;
   height: 350px;
 }
 .banner h1 {
   font-size: 65px;
   margin-bottom: 20px;
 }
-.banner-text p{
+.banner-text p {
   font-weight: 400;
 }
 
 /* Plants section styles */
-.Plants{
+.Plants {
   text-align: center;
   padding: 20px 50px;
   /* margin: 120px 150px 220px 150px; */
-
 }
-.plants-header{
+.plants-header {
   margin-top: 16px;
   margin-bottom: 50px;
 }
-.plants-header h2{
+.plants-header h2 {
   font-size: 50px;
   margin-bottom: 20px;
 }
-.plants-header p{
+.plants-header p {
   font-size: 22px;
   font-weight: 400;
 }
-.plant-grid{
+.plant-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -122,35 +122,79 @@ ul {
   gap: 30px;
   width: 100%;
 }
-.plant-card img{
+.plant-card img {
   width: 100%;
   height: auto;
 }
-.plant-card h3{
+.plant-card h3 {
   font-weight: 500;
   font-size: 22px;
   margin-top: 10px;
 }
 
-.plant-card p{
+.plant-card p {
   font-weight: 700;
   font-size: 22px;
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
+/* Plant Lover Section Style  */
 
-
-
+.plant-lover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 50px;
+  gap: 40px;
+  margin-top: 150px;
+}
+.plant-lover-img {
+  position: relative;
+  width: auto;
+  max-width: 500px;
+}
+.main-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.badge {
+  position: absolute;
+  top: -75px;
+  right: 20px;
+  width: 220px;
+  transform: translateX(100px);
+}
+.plant-lover-text {
+  padding: 40px;
+  max-width: 600px;
+}
+.plant-lover-text h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.plant-lover-text ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  flex-direction: column;
+}
+.plant-lover-text li {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
 
 /* Mobile responsive */
+
 @media screen and (max-width: 576px) {
+  /* nav responsive */
   .nav-link {
     display: none;
     padding: 0 16px;
     margin-bottom: 0px;
   }
 
+  /* banner responsive */
   .banner {
     margin-top: 28px;
     margin-bottom: 28px;
@@ -175,28 +219,59 @@ ul {
   }
 
   .t-size,
-  .plants-header p{
+  .plants-header p {
     font-size: 14px;
   }
+
   /* Plants responsive */
-  .plant-grid{
+  .plant-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .Plants{
+  .Plants {
     padding: 0 13px;
   }
-  .plants-header{
+  .plants-header {
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .plants-header h2{
+  .plants-header h2 {
     font-size: 24px;
     margin-bottom: 10px;
   }
   .plant-card h3,
-  .plant-card p{
+  .plant-card p {
     font-size: 16px;
   }
 
+  /* plant-lover-responsive  */
+  .plant-lover {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .main-img {
+    max-width: 100%;
+    display: block;
+  }
+  .badge {
+    display: none;
+  }
+  .plant-lover-img .main-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .plant-lover-text {
+    padding: 1px;
+    margin-left: 10px;
+  }
+  .plant-lover-text h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .plant-lover-text li {
+    font-size: 14px;
+  }
 }
-
